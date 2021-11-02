@@ -1,0 +1,21 @@
+.ant-menu-horizontal {
+  @apply bg-pink-400 text-white border-0;
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+  @apply border-0;
+}
+
+.ant-menu-horizontal > .ant-menu-item a::before {
+  bottom: 0px;
+}
+
+.ant-menu-vertical {
+  @apply border border-gray-200 rounded-sm shadow-sm;
+}
