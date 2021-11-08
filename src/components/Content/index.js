@@ -1,8 +1,10 @@
 import React from "react";
-import { Card, Row, Col, Rate } from "antd";
+import { Row, Col, Rate } from "antd";
+import { useHistory } from "react-router-dom";
 import Apple from "../../assets/images/AppleAuthorizedReseller.svg";
 
 export default function Content() {
+  const history = useHistory();
   return (
     <div className="pt-4">
       <div>
@@ -23,7 +25,10 @@ export default function Content() {
       <div className="pt-4">
         <Row gutter={10} className="h-full">
           <Col span={6}>
-            <div className="border border-white p-8 h-full rounded-md shadow-sm hover:shadow-md">
+            <div
+              className="border border-white p-8 h-full rounded-md shadow-sm cursor-pointer hover:shadow-md"
+              onClick={() => history.push("/samsung")}
+            >
               <img
                 src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
                 className="pb-4 w-full"

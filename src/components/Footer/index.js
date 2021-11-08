@@ -20,13 +20,13 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="">
+      <div className="mt-20 w-full">
         <div className="">
           <Row gutters={10} className="row">
-            <Col span={6} className="col" data-aos="fade-right">
+            <Col span={12} lg={6}>
               <img src={Logo} alt="logo-footer" className="w-16" />
             </Col>
-            <Col span={6} className="col footer__item" data-aos="fade-up">
+            <Col span={12} lg={6}>
               <p>Thông tin</p>
               <p>
                 <Link to="#">Giới Thiệu</Link>
@@ -41,7 +41,7 @@ const Footer = () => {
                 <Link to="#">Tin tức</Link>
               </p>
             </Col>
-            <Col span={6} className="col" data-aos="fade-up">
+            <Col span={12} lg={6}>
               <p>Hỗ Trợ</p>
               <p>
                 <Link to="#">Điều Khoản sử dụng</Link>
@@ -56,20 +56,30 @@ const Footer = () => {
                 <Link to="#">Liên hệ</Link>
               </p>
             </Col>
-            <Col span={6} data-aos="fade-left" className="flex items-center">
-              <p className="mr-2">Theo dõi chúng tôi</p>
-              <Link to="https://www.facebook.com/">
-                <img src={iconFaceBook} alt="icon-fa" className="w-10" />
-              </Link>
-              <Link to="https://www.instagram.com/">
-                <img src={iconInstagram} alt="icon-insta" className="w-10" />
-              </Link>
-              <Link to="https://twitter.com/">
-                <img src={iconTwitter} alt="img-twitter" className="w-10" />
-              </Link>
-              <Link to="https://www.youtube.com/">
-                <img src={iconYoutube} alt="img-youtube" className="w-10" />
-              </Link>
+            <Col span={12} lg={6}>
+              <div className="flex lg:flex-row flex-col items-center">
+                <p className="mb-0">Theo dõi chúng tôi</p>
+                <Link to="https://www.facebook.com/">
+                  <img src={iconFaceBook} alt="icon-fa" className="w-10" />
+                </Link>
+                <Link to="https://www.instagram.com/">
+                  <img
+                    src={iconInstagram}
+                    alt="icon-insta"
+                    className="w-10 mx-1"
+                  />
+                </Link>
+                <Link to="https://twitter.com/">
+                  <img src={iconTwitter} alt="img-twitter" className="w-10" />
+                </Link>
+                <Link to="https://www.youtube.com/">
+                  <img
+                    src={iconYoutube}
+                    alt="img-youtube"
+                    className="w-10 ml-1"
+                  />
+                </Link>
+              </div>
             </Col>
           </Row>
         </div>

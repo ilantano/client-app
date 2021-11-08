@@ -4,6 +4,7 @@ import "./index.css";
 import "./assets/css/tailwind.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import "./assets/css/components.css";
 
 ReactDOM.render(
   <React.StrictMode>
